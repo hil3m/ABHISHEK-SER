@@ -50,7 +50,7 @@ global.APIKeys = { // APIKey Here
 global.botname = 'HILEM-BOT'
 global.premium = 'true'
 global.packname = 'hilal' 
-global.author = '🔺hilembot🔺' 
+global.author = 'hilembot🔺' 
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/melihozdogru\n' 
 global.dygp = 'https://chat.whatsapp.com/BOLb0ICN3sAJ5dloRBw5V'
 global.fgsc = 'https://github.com/hil3m' 
@@ -59,7 +59,7 @@ global.fgpyp = 'https://youtube.com/'
 global.fglog = 'https://i.imgur.com/O6LjRxB.jpg' 
 
 //imagen
-global.imagen1 = fs.readFileSync('./src/Abhi.jpg')
+global.imagen1 = fs.readFileSync('./src/Abhi2.jpg')
 
 //Dont Edit Danger Zone⚠️
 global.wait = '*⌛ _Lütfen bekleyiniz..._*'
