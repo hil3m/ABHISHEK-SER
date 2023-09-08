@@ -34,30 +34,30 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
 ╭────────────❮
-│👋, ${name} *I M Alive Now!*
+│👋, ${name} *Ben buradayım!*
 ╰────────────⦁
-│ *Bot Info🤖*
+│ *Bot Bilgi🤖*
 ╰────────────⦁
-│ *Bot Name* : ${botname}
-│ *Owner Name* : ${author}
-│ *Developer Name* : 𝙰𝙱𝙷𝙸𝚂𝙷𝙴𝙺 𝚂𝚄𝚁𝙴𝚂𝙷
+│ *Adı* : ${botname}
+│ *Sahibi* : ${author}
+│ *Geliştiricisi* : melih ozdogru
 │ *Platform* : linux
-│ *Uptime* : ${uptime}
-│ *Experience:* ${exp}
-│ *Rank:* ${role}
-│ *Diamonds:* ${diamond}
-│ *Total Users:* ${rtotalreg}
+│ *Mesai* : ${uptime}
+│ *XP:* ${exp}
+│ *Rütbe:* ${role}
+│ *Elmas:* ${diamond}
+│ *Toplam Kullanıcı:* ${rtotalreg}
 ╰────────────⦁
-│ *User Info👤*
+│ *Kullanıcı Bilgi👤*
 ╰────────────⦁
-│ *Name* :${name}
-│ *Number*  : ${taguser}
+│ *Ad* :${name}
+│ *Numara*  : ${taguser}
 │ *Premium* : ${user.premium = 'true' ? '✅' : '❌'}
 ╰────────────⦁
-│ *Calender📅*
+│ *Takvim📅*
 ╰────────────⦁
-│ *Time* :${wib} 
-│ *Date* :${date}
+│ *Saat* :${wib} 
+│ *Tarih* :${date}
 ╰────────────⦁
 │Type ${usedPrefix}menu To
 │Get My Menu📃
