@@ -11,11 +11,11 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
    let json = await res.json()*/
    let json = await fg.StickerSearch(text) 
     m.reply(`
-✅ Result
+✅ sonuç
 
-▢ *Title:* ${json.title}
-▢ *Total stickers:* ${json.sticker_url.length}
-▢ *Estimated shipping time:* _*${json.sticker_url.length * 2} s*_`)
+▢ *konu:* ${json.title}
+▢ *toplam sticker:* ${json.sticker_url.length}
+▢ *sana tahmini ulaşma süresi:* _*${json.sticker_url.length * 2} s*_`)
     for (let i of json.sticker_url) {
         const stiker = await sticker(false, i, global.packname, global.author)
         await conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
