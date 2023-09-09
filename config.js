@@ -62,7 +62,7 @@ global.fglog = 'https://i.imgur.com/O6LjRxB.jpg'
 global.imagen1 = fs.readFileSync('./src/Abhi2.jpg')
 
 //Dont Edit Danger Zone⚠️
-global.wait = '*⌛ _Lütfen bekleyiniz..._*'
+global.wait = '*⌛ _Lutfen bekleyiniz..._*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
