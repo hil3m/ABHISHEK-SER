@@ -2,10 +2,10 @@
   let handler = async (m, { conn }) => {
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
   let name = conn.getName(who)
-  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Abhi.jpg')
+  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Abhi2.jpg')
   conn.sendFile(m.chat, global.API('https://some-random-api.com', '/canvas/overlay/gay', {
     avatar: pp, 
-  }), 'gay.png', `🏳️‍🌈  *Gay :* ${name}\n\nWho Wants To Rape This Gay☠️? `, m)
+  }), 'gay.png', `🏳️‍🌈  *Gay :* ${name}\n\nKim bu gaya çakmak ister☠️? `, m)
 }
 
 handler.help = ['gay @user']
