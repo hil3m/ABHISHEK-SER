@@ -4,7 +4,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ≡ *HILAL*
 hilaaall
 HILEM BOT`
-let img = './Abhi2'
+let img = './Abhi2.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 }
 
