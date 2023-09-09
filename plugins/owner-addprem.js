@@ -6,13 +6,13 @@ let who
     else who = m.chat
     let user = global.db.data.users[who]
     if (!who) throw `✳️ Tag or mention someone\n\n📌 Example : ${usedPrefix + command} @user`
-if (global.prems.includes(who.split`@`[0])) throw '✳️ The user Mentioned Already is premium'
+if (global.prems.includes(who.split`@`[0])) throw '✳️ bu kullanıcı zaten premium'
 global.prems.push(`${who.split`@`[0]}`)
 
 conn.reply(m.chat, `
 ✅ PREMIUM
 
-@${who.split`@`[0]} now you become a premium user
+@${who.split`@`[0]} artık bir hilem premium kullanıcısın
 ┌───────────
 ▢ *Number:* ${user.name}
 └───────────
