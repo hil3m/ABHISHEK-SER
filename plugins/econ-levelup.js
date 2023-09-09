@@ -7,11 +7,11 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         let txt = `
-╭───❮ *𝙻𝙴𝚅𝙴𝙻* ❯
-│ *👤Name* : *${name}*
-│ *📍Level*: *${user.level}*
+╭───❮ *LEVEL* ❯
+│ *👤Ad* : *${name}*
+│ *📍Seviye*: *${user.level}*
 │ *🛑XP* : *${user.exp - min}/${xp}*
-│ *🐉Role* : *${user.role}*
+│ *🐉Rol* : *${user.role}*
 ╰────────────
 
 You Lack *${max - user.exp}* Of *XP* To Level Up
