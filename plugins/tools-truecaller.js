@@ -2,7 +2,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw 'GIVE ME NUMBER';
+  if (!text) throw 'BANA NUMARA VER';
 
   try {
     let res = await fetch(`https://inrl-web.onrender.com/api/truecaller?number=${text}`);
@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
     console.log('JSON response:', json);
 
     
-    json.creator = 'ABHISHEK SURESH';
+    json.creator = 'HILEM PROJECTS';
 
     let milf = '';
     for (let prop in json) {
