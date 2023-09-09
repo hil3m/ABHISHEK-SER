@@ -17,18 +17,18 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-┌───「 *PROFILE* 」
-▢ *🔖 Name:* 
+┌───「 *PROFIL* 」
+▢ *🔖 Ad:* 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
    • @${who.replace(/@.+/, '')}
-▢ *📱Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-▢ *🔗Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈Age*: ' + age + ' years' : ''}
-▢ *⚠️warn:* ${warn}/${maxwarn}
-▢ *💎 Diamonds :* ${diamond}
+▢ *📱Numara:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+▢ *🔗Bağlantı:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈Age*: ' + age + ' years' : ''}
+▢ *⚠️uyarı:* ${warn}/${maxwarn}
+▢ *💎 Elmaslar :* ${diamond}
 ▢ *🆙 Level* : ${level}
 ▢ *⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `ready for *${usedPrefix}levelup*` : `_*${math}xp*_ Missing to level up`}
-▢ *🏆Role:* ${role}
-▢ *📇 Registered :* ${registered ? 'Yes': 'No'}
+▢ *🏆Rol:* ${role}
+▢ *📇 Kayıtlı :* ${registered ? 'Yes': 'No'}
 ▢ *⭐ Premium* : ${prem ? 'Yes' : 'No'}
 └──────────────`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
