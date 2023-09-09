@@ -4,7 +4,7 @@ if (!(who in global.db.data.users)) throw `❌ Veritabanında böyle bir kullan�
 let pp = './Abhi2.jpg'
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
-let lkr = `╭───❮ *𝙱𝙾𝚃 𝙼𝙴𝙽𝚄* ❯
+let lkr = `╭───❮ *HILEM 𝙱𝙾𝚃* ❯
 │ _${usedPrefix}ping_
 │ _${usedPrefix}uptime_
 │ _${usedPrefix}alive_
@@ -248,13 +248,6 @@ ${readMore}
 │ _${usedPrefix}itunes_
 │ _${usedPrefix}technews_
 ╰─────────────⦁
-
-╭───❮ *𝙽𝚂𝙵𝚆 𝙼𝙴𝙽𝚄* ❯
-│ _${usedPrefix}on nsfw_
-│ _${usedPrefix}off nsfw_
-│ _${usedPrefix}hentais *<text>*_
-│ _${usedPrefix}xnxxdl <link>_
-╰────────────⦁
 
 ╭───❮  *🎯HILEMBOT* ❯
 │      𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈
