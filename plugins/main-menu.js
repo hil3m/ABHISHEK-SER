@@ -251,7 +251,7 @@ ${readMore}
 
 ╭───❮  *🎯HILEMBOT* ❯
 │      𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈
-│     melih özdoğru☘️
+│     melih ozdogru☘️
 ╰────────────⦁`  
 conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] })
 m.react('📃')
