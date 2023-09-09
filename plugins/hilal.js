@@ -1,10 +1,10 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
-≡ *HILAL*
-hilaaall
-HILEM BOT`
-let img = './Abhi2.jpg'
+≡ *hilallll*
+-melihe ait.
+! melih ozel komut`
+let img = './hilal.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m)
 }
 
