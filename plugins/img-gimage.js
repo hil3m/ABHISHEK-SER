@@ -2,13 +2,13 @@ import fg from 'api-dylux'
 
 let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
 
-  if (!text) throw `Image Not Found\n\n📌 Example: *${usedPrefix + command}* WhatsApp Bot`
+  if (!text) throw `Resim Bulunamadı\n\n📌 Örnek: *${usedPrefix + command}* Hilem Bot`
 
   let res = await fg.googleImage(text)
 
   conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 
-✅ Results : *${text}*`.trim(), m)
+✅ Sonuçlar : *${text}*`.trim(), m)
 
 }
 
