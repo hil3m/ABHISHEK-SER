@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 	 let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
     else who = m.chat
-    if (!who) throw `🎯Tag Or Mention Someone\n\n📌 Example : ${usedPrefix + command} @tag`
+    if (!who) throw `🎯Birini etiketle veya alıntıla\n\n📌 Örnek : ${usedPrefix + command} @tag`
     
     let user = global.db.data.users[who]
     let name = conn.getName(who) 
@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!rki.ok) throw await rki.text()
    let jkis = await rki.json()
    let { url } = jkis
-   let stiker = await sticker(null, url, `(${name2}) kissed`, `${name}`)
+   let stiker = await sticker(null, url, `(${name2}) öptü`, `${name}`)
    conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
    m.react('😚') 
    
