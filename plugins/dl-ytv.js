@@ -5,7 +5,7 @@ import os from 'os';
 let limit = 500;
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
   if (!args || !args[0]) throw `📌Example:\n${usedPrefix + command} https://youtu.be/Xb1-Oh1_msQ`;
-  if (!args[0].match(/youtu/gi)) throw `🎯 Verify That The YouTube Link`;
+  if (!args[0].match(/youtu/gi)) throw `🎯 Youtube Linkini Doğrula`;
 
   let chat = global.db.data.chats[m.chat];
   m.react(rwait);
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
     }
 
     if (format.contentLength / (1024 * 1024) >= limit) {
-      return m.reply(`≡ *ABHU YTDL*\n\n▢ *⚖️Size*: ${format.contentLength / (1024 * 1024).toFixed(2)}MB\n▢ *🎞️Quality*: ${format.qualityLabel}\n\n▢ The File Exceeds The Download Limit *+${limit} MB*`);
+      return m.reply(`≡ *HILEM YTDL*\n\n▢ *⚖️Boyut*: ${format.contentLength / (1024 * 1024).toFixed(2)}MB\n▢ *🎞️Kalite*: ${format.qualityLabel}\n\n▢ Limit Aşıldı *+${limit} MB*`);
     }
 
     const tmpDir = os.tmpdir();
@@ -34,9 +34,9 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
         fs.readFileSync(fileName),
         `${info.videoDetails.videoId}.mp4`,
         ` ╭──── 〔 Y O U T U B E 〕 ─⬣
-	  ⬡ Title: ${info.videoDetails.title}
-	  ⬡ Duration: ${info.videoDetails.lengthSeconds} seconds
-	  ⬡ Views: ${info.videoDetails.viewCount}
+	  ⬡ Başlık: ${info.videoDetails.title}
+	  ⬡ Süre: ${info.videoDetails.lengthSeconds} seconds
+	  ⬡ Görüntülenme: ${info.videoDetails.viewCount}
 	  ⬡ Upload: ${info.videoDetails.publishDate}
 	  ⬡ Link: ${args[0]}
 	  ╰─────────────────⬣`,
